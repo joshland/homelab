@@ -1,6 +1,6 @@
 module git.127-0-0-1.nip.io/khuedoan/homelab/vault/init
 
-go 1.17
+go 1.19
 
 require (
 	github.com/hashicorp/vault/api v1.4.1
