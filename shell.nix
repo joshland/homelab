@@ -1,10 +1,11 @@
-# https://status.nixos.org
-{ pkgs ? import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/a62844b302507c7531ad68a86cb7aa54704c9cb4.tar.gz") {} }:
+# https://status.nixos.org (nixos-22.11)
+{ pkgs ? import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/6c591e7adc51.tar.gz") {} }:
 
 let
   python-packages = pkgs.python3.withPackages (p: with p; [
     jinja2
     kubernetes
+    mkdocs-material
     netaddr
     rich
   ]);
